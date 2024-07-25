@@ -1,0 +1,132 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat&display=swap');
+
+:root{
+    --color-primario: #000000;
+    --color-segundario:#f6f6f6;
+    --color-terciario:#22d4fd;
+
+    --fuente-moserat:'Montserrat', sans-serif;
+    --fuente-Krona:'Krona One', sans-serif;
+
+}
+*{
+    padding:0;
+    margin: 0;
+}
+
+.header{
+  padding: 2% 0% 0% 15%;
+}
+
+.header_menu{
+    display: flex;
+    gap: 80px;
+
+}
+.header_menu_link{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--color-terciario);
+    text-decoration: none;
+}
+
+body {
+    background-color: var(--color-primario);
+    color: var(--color-segundario);
+    box-sizing: border-box;
+
+}
+
+strong {
+    color: var(--color-terciario);
+}
+.titulo_destaque{
+    color: var(--color-terciario);
+}
+.presentacion{
+    padding: 5% 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 82px;
+}
+.presentacion_contenido{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.presentacion_contenido_titulo{
+    font-size: 2.25rem;
+    font-family: var(--fuente-Krona);
+}
+.presentacion_contenido_texto{
+    font-size: 1.5rem;
+    font-family: var(--fuente-moserat);
+}
+.presentacion_enlaces{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+}
+.presentacion_enlaces_link{
+    width: 50%;  
+    text-align: center;
+    padding: 21.5px 0;
+    border-radius: 8px;
+    font-family: var(--fuente-moserat);
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-decoration: none;
+    color: var(--color-segundario);
+    border: 2px solid var(--color-terciario);
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+
+}
+
+.presentacion_enlaces_link:hover{
+    background-color: var(--color-primario);
+    cursor: pointer;
+}
+.presentacion_enlaces_subtitulo{
+    font-family: var(--fuente-Krona);
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+.footer{
+    background-color: var(--color-terciario);
+    padding: 24px;
+    color: var(--color-primario);
+    text-align: center;
+    font-family: var(--fuente-Krona);
+    font-size: 1.5rem;
+    font-weight:400 ;
+}
+
+.presentacion_imagen{
+    width: 50%;
+}
+
+@media(max-width:900px){
+
+    .header{
+        padding: 10%;
+    }
+    .header_menu{
+        justify-content: center;
+    }
+    .presentacion{
+        flex-direction: column-reverse;
+        padding: 5%;
+        
+    }
+}
+.presentacion_contenido{
+    width: auto;
+}
